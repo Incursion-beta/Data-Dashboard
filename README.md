@@ -30,7 +30,7 @@ npm install
 
 2) Configure environment
 ```
-cp .env.example .env
+Update .env and add your API key
 # then set your key
 VITE_FRED_API_KEY=your_actual_fred_api_key_here
 ```
@@ -48,24 +48,15 @@ Included indicators (extendable in `src/App.jsx`):
 - Housing Inventory: Active Listing Count (Realtor.com)
 - GDP (BEA RGMP series)
 
-Sample MSAs:
-- Miami–Fort Lauderdale–West Palm Beach, FL (CBSA 33100)
-- Tampa–St. Petersburg–Clearwater, FL (CBSA 45300)
-- Orlando–Kissimmee–Sanford, FL (CBSA 36740)
+
 
 ## 🔍 Customization
 
 - Add more MSAs in the `MSAS` array in `src/App.jsx`.
 - Add indicators by defining how to compute a series ID per CBSA and optional transform/formatters in the `INDICATORS` map.
-- Colors for specific MSAs are pinned (Miami = Yellow `#FFFF00`, Tampa = Cyan `#00FFFF`, Orlando = Magenta `#FF00FF`).
 
-## 🚀 Deployment
 
-Build for production:
-```
-npm run build
-```
-Serve `dist/` with any static host (Vercel, Netlify, GitHub Pages, S3, etc.).
+
 
 ## 📝 Notes
 
